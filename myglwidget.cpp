@@ -1,6 +1,7 @@
 #include "myglwidget.h"
 #include "myglwidget.h"
 
+#include <QDebug>
 #include <QFile>
 #include <QTextStream>
 
@@ -21,6 +22,8 @@ GLuint ShaderProgram::compile(QString vertexFilePath, QString fragmentFilePath)
 
     qDebug() << vertexSource;
     qDebug() << fragSource;
+
+    return 0;
 }
 
 void MyGLWidget::initializeGL()
